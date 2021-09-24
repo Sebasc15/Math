@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Math.MainPage">
+
+    <Grid ColumnSpacing="0" RowSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Titulo" Text="Math" TextColor="DeepSkyBlue" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" 
+               VerticalOptions="Center" HorizontalOptions="Center" FontSize="80" Padding="0,0,10,12"></Label>
+
+
+        <!-- 
+            Serie fibonacci. 
+            LABEL 3 columnas
+            Boton 1 Columna
+        -->
+        <Label Text="Serie Fibonacci" Grid.Column="0" Grid.Row="1" TextColor="Orange" 
+               Grid.ColumnSpan="3" FontSize="30" VerticalOptions="Center" Padding="15,0,15,0"
+               ></Label>
+        <Button x:Name="BtnFibonacci" Text=">>>" FontSize="30" BackgroundColor="ForestGreen" 
+                Grid.Column="3" Grid.Row="1" Clicked="BtnFibonacci_Clicked" Margin="0,60,15,60"></Button>
+
+
+        <!-- 
+            Calculadora Basica. 
+            LABEL 3 columnas
+            Boton 1 Columna
+        -->
+        <Label Text="Calcular Promedio" Grid.Column="0" Grid.Row="2" TextColor="DodgerBlue" 
+               Grid.ColumnSpan="3" FontSize="30" VerticalOptions="Center" Padding="15,0,15,0"></Label>
+        
+        <Button x:Name="BtnCalculadora" Text=">>>" FontSize="30" BackgroundColor="ForestGreen" 
+                Grid.Column="3" Grid.Row="2" Clicked="BtnCalculadora_Clicked" Margin="0,60,15,60"></Button>
+
+        <!-- 
+            **PROXIMAMENTE**
+        
+            Convertidor de medidas. 
+            LABEL 3 columnas
+            Boton 1 Columna
+        
+        <Label Text="Convertidor de medidas" Grid.Column="0" Grid.Row="3" TextColor="HotPink" 
+               Grid.ColumnSpan="3" FontSize="30" VerticalOptions="Center" Padding="15,0,15,0"></Label>
+
+        <Button x:Name="BtnMedidas" Text=">>>" FontSize="30" BackgroundColor="ForestGreen" 
+                Grid.Column="3" Grid.Row="3" Clicked="BtnMedidas_Clicked" Margin="0,60,15,60"></Button>
+        
+        -->
+
+    </Grid>
+
+</ContentPage>

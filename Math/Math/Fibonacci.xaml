@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Math.Fibonacci">
+    <Grid ColumnSpacing="0" RowSpacing="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Titulo" Text="Serie Fibonacci" TextColor="DeepSkyBlue" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" 
+               VerticalOptions="Center" HorizontalOptions="Center" FontSize="40" Padding="0,15,0,0"></Label>
+
+        <Label Text="Numero de iteraciones" TextColor="White" Grid.Column="0" Grid.Row="1" 
+               Grid.ColumnSpan="4" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center" Padding="0,0,0,0"></Label>
+        <Entry Placeholder="Numero Entero" x:Name="txtIteraciones" Grid.Column="1" Grid.Row="2" 
+               Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalTextAlignment="Center" Keyboard="Numeric"></Entry>
+
+        <Label x:Name="lblResutl" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4" HorizontalOptions="Center" 
+               VerticalOptions="Center" FontSize="20" Padding="10,0,10,0" TextColor="LightGreen"
+               Grid.RowSpan="2"></Label>
+
+        <Button x:Name="CLS" Text="Limpiar" Grid.Column="0" Grid.Row="5"
+                Margin="10,25,10,25" BackgroundColor="Gray" Clicked="CLS_Clicked"
+            ></Button>
+        <Button x:Name="Calcular" Text="Calcular" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3"
+                Margin="10,25,30,25" Clicked="Calcular_Clicked" BackgroundColor="Green"
+            ></Button>
+        
+    </Grid>
+</ContentPage>
